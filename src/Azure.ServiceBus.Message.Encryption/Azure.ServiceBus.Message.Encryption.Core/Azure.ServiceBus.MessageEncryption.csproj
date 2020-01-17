@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Azure.ServiceBus.MessageEncryption</AssemblyName>
+    <Version>1.0.0.0</Version>
+    <Authors>Vighneshwar Madas</Authors>
+    <Product>Azure ServiceBus MessageEncryption Plugin</Product>
+    <Description>Azure ServiceBus MessageEncryption Plugin</Description>
+    <Copyright>© Vighneshwar Madas 2020</Copyright>
+    <PackageProjectUrl>https://github.com/iamvighnesh/azure-servicesbus-message-keyvault-encryption</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iamvighnesh/azure-servicesbus-message-keyvault-encryption</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <SignAssembly>false</SignAssembly>
+    <RootNamespace>Azure.ServiceBus.MessageEncryption</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.1.1" />
+  </ItemGroup>
+
+</Project>

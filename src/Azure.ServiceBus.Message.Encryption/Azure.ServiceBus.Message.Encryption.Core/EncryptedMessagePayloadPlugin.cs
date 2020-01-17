@@ -1,14 +1,14 @@
-﻿using Azure.ServiceBus.Message.Encryption.Core.Providers;
+﻿using Azure.ServiceBus.MessageEncryption.Providers;
 using Microsoft.Azure.ServiceBus.Core;
 using System.Threading.Tasks;
 
-namespace Azure.ServiceBus.Message.Encryption.Core
+namespace Azure.ServiceBus.MessageEncryption
 {
     public class EncryptedMessagePayloadPlugin : ServiceBusPlugin
     {
         private readonly ICryptographyProvider cryptographyProvider;
 
-        internal EncryptedMessagePayloadPlugin(ICryptographyProvider cryptographyProvider)
+        public EncryptedMessagePayloadPlugin(ICryptographyProvider cryptographyProvider)
         {
             this.cryptographyProvider = cryptographyProvider;
         }
