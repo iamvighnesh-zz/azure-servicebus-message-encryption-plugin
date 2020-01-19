@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Azure.ServiceBus.MessageEncryption\Azure.ServiceBus.MessageEncryption.csproj" />
+    <ProjectReference Include="..\ServiceBus.MessageEncryption\ServiceBus.MessageEncryption.csproj" />
   </ItemGroup>
 
 </Project>

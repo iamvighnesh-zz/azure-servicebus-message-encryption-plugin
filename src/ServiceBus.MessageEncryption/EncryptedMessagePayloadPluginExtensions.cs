@@ -1,6 +1,6 @@
-﻿using Azure.ServiceBus.MessageEncryption.Providers;
+﻿using ServiceBus.MessageEncryption.Providers;
 
-namespace Azure.ServiceBus.MessageEncryption
+namespace ServiceBus.MessageEncryption
 {
     public static class EncryptedMessagePayloadPluginExtensions
     {

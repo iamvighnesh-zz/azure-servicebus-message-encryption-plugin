@@ -1,7 +1,7 @@
-﻿using Azure.ServiceBus.MessageEncryption.Providers;
+﻿using ServiceBus.MessageEncryption.Providers;
 using System.Threading.Tasks;
 
-namespace Azure.ServiceBus.MessageEncryption.Tests.TestDoubles
+namespace ServiceBus.MessageEncryption.Tests.TestDoubles
 {
     public class FakeCryptographyProvider : ICryptographyProvider
     {
