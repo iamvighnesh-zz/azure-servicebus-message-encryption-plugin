@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 
-namespace Azure.ServiceBus.MessageEncryption.Providers
+namespace ServiceBus.MessageEncryption.Providers
 {
     public class TripleDESCryptographyProvider : ICryptographyProvider
     {

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Azure.ServiceBus.MessageEncryption.Providers
+namespace ServiceBus.MessageEncryption.Providers
 {
     public interface ICryptographyProvider
     {

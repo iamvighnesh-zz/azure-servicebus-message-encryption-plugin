@@ -1,11 +1,11 @@
-using Azure.ServiceBus.MessageEncryption.Tests.TestDoubles;
 using FluentAssertions;
 using Microsoft.Azure.ServiceBus;
 using NUnit.Framework;
+using ServiceBus.MessageEncryption.Tests.TestDoubles;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Azure.ServiceBus.MessageEncryption.Tests
+namespace ServiceBus.MessageEncryption.Tests
 {
     public class EncryptedMessagePayloadPluginShould
     {

@@ -1,8 +1,8 @@
-﻿using Azure.ServiceBus.MessageEncryption.Providers;
-using Microsoft.Azure.ServiceBus.Core;
+﻿using Microsoft.Azure.ServiceBus.Core;
+using ServiceBus.MessageEncryption.Providers;
 using System.Threading.Tasks;
 
-namespace Azure.ServiceBus.MessageEncryption
+namespace ServiceBus.MessageEncryption
 {
     public class EncryptedMessagePayloadPlugin : ServiceBusPlugin
     {

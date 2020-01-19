@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Azure.ServiceBus.MessageEncryption.Console
+namespace ServiceBus.MessageEncryption.Console
 {
     public class Program
     {
