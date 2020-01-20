@@ -31,6 +31,7 @@ And here is the command for the package manager to install the package:
 
 ## Encryption Algorithms
 Here is a list of algorithms supported by the library,
+
 | Algorithm | Supported |
 |----------- | ---------- |
 | [Triple Data Encryption Standard (TDES)](https://en.wikipedia.org/wiki/Triple_DES)| YES |
