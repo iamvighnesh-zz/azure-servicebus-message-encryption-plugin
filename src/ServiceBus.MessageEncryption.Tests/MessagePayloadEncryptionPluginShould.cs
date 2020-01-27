@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace ServiceBus.MessageEncryption.Tests
 {
-    public class EncryptedMessagePayloadPluginShould
+    public class MessagePayloadEncryptionPluginShould
     {
-        private EncryptedMessagePayloadPlugin plugin;
+        private MessagePayloadEncryptionPlugin plugin;
 
         [SetUp()]
         public void Setup()
         {
-            plugin = new EncryptedMessagePayloadPlugin(new FakeCryptographyProvider());
+            plugin = new MessagePayloadEncryptionPlugin(new FakeCryptographyProvider());
         }
 
         [Test]
