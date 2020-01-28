@@ -1,5 +1,6 @@
 ﻿using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.ServiceBus.Core;
+using System.Diagnostics;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,23 +21,29 @@ namespace ServiceBus.MessageEncryption.Console
             //Publish the message
             var messageJsonBody = Newtonsoft.Json.JsonConvert.SerializeObject(new { FirstName = "Vighneshwar", LastName = "Madas" });
             var messageBody = Encoding.UTF8.GetBytes(messageJsonBody);
-            var publishMessage = new Message(messageBody);
-
+            
             //Build a Message Sender with encryption plugin registration
             var sender = new MessageSender(connectionString, topicPath, RetryPolicy.Default);
-            sender.WithRijndaelManagedEncryption(cryptoKey, initVectorKey);
-
-            await sender.SendAsync(publishMessage);
-            System.Console.WriteLine($"Published Message : {Encoding.UTF8.GetString(publishMessage.Body)}");
-
-            Thread.Sleep(100);
+            sender.EnableRijndaelManagedEncryption(cryptoKey, initVectorKey);
 
             //Build a Message Receiver with encryption plugin registration
             var receiver = new MessageReceiver(connectionString, subscriptionPath, ReceiveMode.PeekLock, RetryPolicy.Default);
-            receiver.WithRijndaelManagedEncryption(cryptoKey, initVectorKey);
+            receiver.EnableRijndaelManagedEncryption(cryptoKey, initVectorKey);
 
+            var publishMessage = new Message(messageBody);
+
+            Stopwatch stopWatch = Stopwatch.StartNew();
+            await sender.SendAsync(publishMessage);
+            stopWatch.Stop();
+            System.Console.WriteLine($"Published Message ({stopWatch.ElapsedMilliseconds}ms) : {Encoding.UTF8.GetString(publishMessage.Body)}");
+
+            Thread.Sleep(100);
+
+            stopWatch.Reset();
+            stopWatch = Stopwatch.StartNew();
             var receivedMessage = await receiver.ReceiveAsync();
-            System.Console.WriteLine($"Received Message : {Encoding.UTF8.GetString(receivedMessage.Body)}");
+            stopWatch.Stop();
+            System.Console.WriteLine($"Received Message ({stopWatch.ElapsedMilliseconds}ms) : {Encoding.UTF8.GetString(receivedMessage.Body)}");
         }
     }
 }
