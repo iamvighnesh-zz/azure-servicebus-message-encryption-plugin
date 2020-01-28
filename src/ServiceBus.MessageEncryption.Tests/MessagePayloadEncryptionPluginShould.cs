@@ -87,7 +87,7 @@ namespace ServiceBus.MessageEncryption.Tests
 
             //Assert
             result.UserProperties.ContainsKey(integrityCheckStatusProperty).Should().BeTrue();
-            result.UserProperties[integrityCheckStatusProperty].ToString().Should().Be("Pass");
+            result.UserProperties[integrityCheckStatusProperty].ToString().Should().Be("True");
         }
 
         [Test]
