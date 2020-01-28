@@ -5,11 +5,11 @@
     <AssemblyName>ServiceBus.MessageEncryption</AssemblyName>
     <Version>1.0.0.0</Version>
     <Authors>Vighneshwar Madas</Authors>
-    <Product>Azure ServiceBus MessageEncryption Plugin</Product>
-    <Description>Azure ServiceBus MessageEncryption Plugin</Description>
+    <Product>Azure ServiceBus Message Encryption Plugin</Product>
+    <Description>Azure ServiceBus Message Encryption Plugin</Description>
     <Copyright>© Vighneshwar Madas 2020</Copyright>
-    <PackageProjectUrl>https://github.com/iamvighnesh/azure-servicesbus-message-keyvault-encryption</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/iamvighnesh/azure-servicesbus-message-keyvault-encryption</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/iamvighnesh/azure-servicesbus-message-encryption-plugin</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iamvighnesh/azure-servicesbus-message-encryption-plugin</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <NeutralLanguage>en-GB</NeutralLanguage>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
