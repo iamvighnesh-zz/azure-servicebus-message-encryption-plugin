@@ -68,4 +68,4 @@ Please note that the `EnableRijndaelManagedEncryption()` can be used on a `Subsc
 
 ## **Build Status**
 
-[![Build Status](https://iamvighnesh.visualstudio.com/GitHub%20Projects/_apis/build/status/ServiceBus.MessageEncryption.Plugin-CI?branchName=master)](https://iamvighnesh.visualstudio.com/GitHub%20Projects/_build/latest?definitionId=6&branchName=master)
+[![Build Status](https://iamvighnesh.visualstudio.com/GitHub%20Projects/_apis/build/status/ServiceBus.MessageEncryption.Plugin-CI?branchName=master)](https://iamvighnesh.visualstudio.com/GitHub%20Projects/_build/latest?definitionId=6&branchName=master) [![NuGet Version and Downloads count](https://buildstats.info/nuget/ServiceBus.MessageEncryption?includePreReleases=true)](https://www.nuget.org/packages/ServiceBus.MessageEncryption/)
